@@ -92,29 +92,40 @@ document.addEventListener("DOMContentLoaded", function () {
   // Contact Form Handler
   const contactForm = document.getElementById("contactForm");
 
-  if (contactForm) {
+    if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
+        e.preventDefault();
 
-      // Get form data
-      const formData = new FormData(this);
-      const data = {};
+        const formData = new FormData(this);
 
-      formData.forEach((value, key) => {
-        data[key] = value;
-      });
+        const name = formData.get("name") || "";
+        const email = formData.get("email") || "";
+        const company = formData.get("company") || "";
+        const service = formData.get("service") || "";
+        const message = formData.get("message") || "";
 
-      // Here you would normally send the data to a server
-      // For now, we'll just show an alert
-      console.log("Form submission data:", data);
+        const subject = encodeURIComponent(`New Contact Form Submission`);
+        const body = encodeURIComponent(
+        `Name: ${name}
+    Email: ${email}
+    Company: ${company}
+    Service of Interest: ${service}
 
-      // Show success message
-      alert("Thank you for your message! We will get back to you soon.");
+    Message:
+    ${message}`
+        );
 
-      // Reset form
-      this.reset();
+        // Opens the user's email client with the email pre-filled
+        window.location.href = `mailto:info@carbonthread.com?subject=${subject}&body=${body}`;
+
+        // Optional: show a message
+        alert("Your email client is opening now. Please press Send to complete.");
+
+        // Reset form
+        this.reset();
     });
-  }
+    }
+
 
   // Intersection Observer for Fade-in Animations
   const observerOptions = {
