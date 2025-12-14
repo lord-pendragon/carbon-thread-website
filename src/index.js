@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         // Opens the user's email client with the email pre-filled
-        window.location.href = `mailto:info@carbonthread.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:info@carbon-thread.com?subject=${subject}&body=${body}`;
 
         // Optional: show a message
         alert("Your email client is opening now. Please press Send to complete.");

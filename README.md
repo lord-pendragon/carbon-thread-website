@@ -138,7 +138,7 @@ This project is proprietary to Carbon Thread. All rights reserved.
 ## 📞 Contact
 
 For questions or support, please contact:
-- Email: info@carbonthread.com
+- Email: info@carbon-thread.com
 - Website: [carbonthread.com](https://carbonthread.com)
 
 ## 👥 Team
