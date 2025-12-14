@@ -139,7 +139,7 @@ This project is proprietary to Carbon Thread. All rights reserved.
 
 For questions or support, please contact:
 - Email: info@carbon-thread.com
-- Website: [carbonthread.com](https://carbonthread.com)
+- Website: [carbon-thread.com](https://carbon-thread.com)
 
 ## 👥 Team
 

@@ -4,6 +4,8 @@ import AdilImg from "./images/Adil.jpg";
 import TahaImg from "./images/Taha.jpg";
 import ShahryarImg from "./images/Muhammad_Shahryar_Yaqoob.jpg";
 import FarraeImg from "./images/Muhammad_Farrae.jpg";
+import LogoImg from "./images/carbon-thread-nobg.png";
+import Favicon from "./images/favicon.png";
 
 
 // Wait for DOM to be ready
@@ -11,6 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // Mobile Navigation Toggle
   const navToggle = document.getElementById("navToggle");
   const navMenu = document.getElementById("navMenu");
+  const navLogo = document.getElementById("navLogo");
+  if (navLogo) {
+    navLogo.src = LogoImg;
+  }
+
+  const favicon = document.getElementById("favicon");
+  if (favicon) {
+    favicon.href = Favicon;
+  }
+
+
 
   if (navToggle && navMenu) {
     navToggle.addEventListener("click", function () {
@@ -248,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Export for potential use in other modules
-export const CarbonThread = {
+export const carbonthread = {
   version: "1.0.0",
   init: function () {
     console.log("Carbon Thread Website Initialized");
@@ -256,4 +269,4 @@ export const CarbonThread = {
 };
 
 // Initialize
-CarbonThread.init();
+carbonthread.init();
