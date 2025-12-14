@@ -1,5 +1,10 @@
 // Import styles
 import "./styles/main.css";
+import AdilImg from "./images/Adil.jpg";
+import TahaImg from "./images/Taha.jpg";
+import ShahryarImg from "./images/Muhammad_Shahryar_Yaqoob.jpg";
+import FarraeImg from "./images/Muhammad_Farrae.jpg";
+
 
 // Wait for DOM to be ready
 document.addEventListener("DOMContentLoaded", function () {
@@ -125,6 +130,20 @@ document.addEventListener("DOMContentLoaded", function () {
         this.reset();
     });
     }
+
+  const teamImageMap = {
+    adil: AdilImg,
+    taha: TahaImg,
+    shahryar: ShahryarImg,
+    farrae: FarraeImg,
+  };
+
+  document.querySelectorAll("img.team-photo[data-key]").forEach((img) => {
+    const key = img.dataset.key;
+    const src = teamImageMap[key];
+    if (src) img.dataset.src = src; // now your existing lazy loader will work
+  });
+
 
 
   // Intersection Observer for Fade-in Animations
