@@ -143,7 +143,6 @@ For questions or support, please contact:
 
 ## 👥 Team
 
-- **Adil Aslam** - Renewable Energy Expert
 - **Taha Moiz, PhD** - Sustainability Strategist
 - **M. Shahryar Yaqoob** - Environmental Specialist
 

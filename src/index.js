@@ -1,6 +1,5 @@
 // Import styles
 import "./styles/main.css";
-import AdilImg from "./images/Adil.jpg";
 import TahaImg from "./images/Taha.jpg";
 import ShahryarImg from "./images/Muhammad_Shahryar_Yaqoob.jpg";
 import FarraeImg from "./images/Muhammad_Farrae.jpg";
@@ -145,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
   const teamImageMap = {
-    adil: AdilImg,
     taha: TahaImg,
     shahryar: ShahryarImg,
     farrae: FarraeImg,
